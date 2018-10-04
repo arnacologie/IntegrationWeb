@@ -1,0 +1,230 @@
+
+body{
+    display: flex;
+    justify-content: space-between;
+    font-family: "RobotoBoldItalic",  "Roboto",  "RobotoBold", sans-serif;
+    align-items: center;
+    flex-direction: column;
+    height: 2500px;
+}
+/*************DIVS***************/
+#header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 240px;
+    z-index: -1;;
+}
+#mainNav{
+    width: 365px;
+    height: 69px;
+    display: flex;
+    justify-content: space-between;
+}
+#mainContent{
+    width: 80%;
+}
+#copyright{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+#logo_container{
+    width: 240px;
+    height: 240px;
+    margin-top: 5%;
+}
+#container_toggle{
+    display: none;
+}
+#item_container{
+    height: 295px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#hamburger_container{
+    width: 69px;
+    height: 69px;
+    display: flex;
+    justify-self: flex-end;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF954F;
+}
+#nav:first-child{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+#section1:first-child{
+    align-self: center;
+}
+#registerBtn{
+    color: #fff;
+    background-color: #FF954F;
+    border-radius: 5px;
+    margin-bottom: 45px;
+    margin-top: 20px;
+    width: 170px;
+    height: 40px;
+    font-family: "RobotoBoldItalic", sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    border-style: none;
+}
+#conditionYnov{
+    text-align: center;
+}
+#logo_ynov{
+    width: 81px;
+    height: 81px;
+}
+#registerLink{
+    margin-bottom: 35px;
+    display: none;
+}
+/************CLASSES*************/
+.wrapper{
+    max-width: 768px;
+    margin: 0px auto;
+}
+.img.responsive{
+    width: 100%;
+}
+.item{
+    display: flex;
+    align-items: center;
+    background-color: #FF954F;
+    padding: 25px;
+}
+.item>a{
+    text-decoration: none;
+    color:#fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+}
+.bloc{
+    height: auto;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+.main_title_section{
+    display: table;
+    font-family: "RobotoBoldItalic", sans-serif;
+    align-self: center;
+    font-size: 18px;
+    color: #FF954F;
+    margin: 20px 0;
+}
+.title_section{
+    font-family: "RobotoBold";
+    font-size: 17px;
+    margin: 20px 0;
+}
+.content_section{
+    font-size: 17px;
+    line-height: 21px;
+}
+.link{
+    text-decoration: underline;
+    margin: 25px 0;
+}
+/********************************/
+/**************FONTS*************/
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: "RobotoBold";
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: "RobotoBoldItalic";
+    src: url(../fonts/Roboto-BoldItalic.ttf);
+}
+/********************************/
+/*********MEDIA QUERIES**********/
+@media (min-width:769px){
+    /******classes*****/
+    .wrapper{
+        max-width: inherit;
+    }
+    .item{
+        font-size: 24px;
+        height: 45px;
+        width: 275px;
+        justify-content: center;
+    }
+    .main_title_section{
+        font-size: 27px;
+    }
+    .title_section{
+        font-family: "RobotoBold";
+        font-size: 19px;
+        margin: 20px 0;
+    }
+    .content_section{
+        font-size: 19px;
+        line-height: 21px;
+    }
+    .link{
+        display: none;
+    }
+    /******************/
+    /*******divs*******/
+    #item_container{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    #mainNav{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100px!important;
+
+    }
+    #hamburger_container{
+        display: none;
+    }
+    #nav{
+        width: 100%;
+    }
+    #registerLink{
+        display: block;
+        margin :10px 0px 35px 0px;
+    }
+    #registerBtn{
+        display: none;
+    }
+    #nav:first-child{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    #container_toggle{
+        display: block !important;
+        width: 100%;
+    }
+    #footer{
+        width: 100%;
+    }
+    #copyright{
+        justify-content: space-between;
+    }
+    #logo_container{
+        padding-top: 51%;
+    }
+    /******************/
+}
+/********************************/
